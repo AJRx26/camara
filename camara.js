@@ -24,7 +24,7 @@ camara_boton.addEventListener('click', async function(){
 });
 
 clic_boton.addEventListener('click', function(){
-    canvas.getContext('2d').drawImage(video, 0, 0, canvas, width, canvas.height);
+    canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
     let image_data_url=canvas.toDataURL('image/jpeg');
 
     dataurl.value=image_data_url;
